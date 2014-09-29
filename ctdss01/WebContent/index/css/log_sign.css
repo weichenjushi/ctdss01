@@ -1,0 +1,315 @@
+/*css for pages about log,sign,profile*/
+
+html
+{
+	*zoom:1;*overflow-x:hidden;margin: 0;padding:0;height: 100%; 
+
+}
+
+.menubutton
+{
+	padding-left:150px;
+	width:400px;
+	height:90px;
+	text-align:center;
+}
+
+.menu
+{
+    width:100px;  
+    height:26px;  
+	padding: 7px 6px 0; 
+	background: #DBDBDB repeat-x 0 -110px; 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 15px; 
+	position:absolute;
+	text-decoration:none;
+	color:black;
+}
+
+.indexfooter
+{
+	border-top:1px solid #e0e0e0;
+	padding-top:1%;
+	text-align:center;color:#757575;
+	display:block;
+	font-size:93%;
+	margin-right:1.5%;
+	position: absolute; 
+	bottom: 0; 
+	width: 99%; 
+	height: 50px;
+
+}
+
+.indexfooter a:link,.indexfooter a:visited
+{
+	text-decoration:none;
+	color:#007DEF;
+}
+
+.indexfooter a:hover{text-decoration:underline;}
+
+.input
+{
+	height:25px;
+	width:200px;
+}
+
+
+.longinput
+{
+	height:30px;
+	width:400px;
+/* 	width:238px;
+    height:16px; */
+    padding:10px 25px 10px 5px;
+    border:1px solid #cccccc;
+     float:left; 
+  /*   font-size:14px;
+    font-family:arial,"宋体"; */
+    color: #999;
+    overflow:hidden;
+}
+/* .blank{
+width:500px;height:16px;position:absolute;left:243px;top:7px;padding:3px;float:none;
+} */
+
+.button
+{
+	/* background: #FF4700; */
+	background: #0099CC;
+	width:269px;  
+    height:36px;
+	/* font-family:dotum; */
+	color:white;
+	font-size:14px;
+}
+
+.color_border a,.color_border_for_resend a,.div_center_signup a,.identify_code a
+{
+	color:#666666;
+/* 	font-family:dotum; */
+	font-family:sans-serif
+	font-size:15px;
+}
+
+#lightwords
+{
+	/* font-family:dotum; */
+	font-size:14px;
+	color:#999999;
+	text-align:left;
+}
+
+.margin
+{
+	margin-top:50px;
+}
+
+.null_50
+{
+	height:5%;
+}
+
+.null_100
+{
+	height:100px;
+}
+.null_150
+{
+	height:150px;
+}
+/*css for index.jsp*/
+
+.div_center
+{
+	width:100%;
+	text-align:center;
+	margin-left:400px;
+	positon:absolute;
+}
+
+.table tr td
+{
+	text-align:center;
+}
+/*css for login.jsp*/
+
+.login
+{
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.login a
+{
+	font-size:300%;
+	color: #FF0000;
+/* 	font-family:dotum; */
+	font-family:sans-serif
+	color: red;
+	padding-left:15%;
+	
+}
+
+.color_border
+{
+	width:500px;
+	height:250px;
+	background-color:#F0F8FF;
+	border:solid 1px #d3d3d3; 
+	text-align:center;
+}
+
+.notice:link,.notice:visited
+{
+	font-size:14px;
+	font-weight:normal;
+	text-decoration:none;
+	color:#007DEF;
+	font-family:sans-serif;
+}
+
+/*css for signup.jsp*/
+
+.register a
+{
+	font-size:300%;
+	font-family:sans-serif;
+	color: #FF0000;
+	padding-left:15%;
+}
+
+.table_null
+{
+    margin: auto;
+	text-align:center;
+	margin-left:400px;
+	positon:absolute;
+	line-height:35px; 
+}
+
+.div_center_signup
+{
+	text-align:center;
+}
+
+#red
+{
+	font-size:13px;
+	color:#f00;
+}
+
+.identify_code
+{
+	text-align:center;
+	margin:1% auto;
+	width:40%;
+	height:150px;
+	border:solid 1px #d3d3d3; 
+}
+
+.register_button
+{
+	margin:0 auto;
+	text-align:center;
+	height:7%;
+}
+
+/*css for password_reset & regsuccess & update_password*/
+
+.color_border_for_resend
+{
+	width:800px;
+	height:300px;
+	background-color:#F0F8FF;
+	border:solid 1px #d3d3d3; 
+	text-align:center;
+	line-height:26px;
+}
+
+/*css for regsuccess*/
+
+.lineheight
+{
+	line-height:25px;
+}
+
+/*css for profile*/
+
+.div_save
+{
+	height:100px;
+}
+
+
+.profile_table
+{
+	line-height:50px;
+	text-align:center;
+}
+.recover_password
+{	
+	margin-top:30px;
+	margin-bottom:25px;
+}
+
+.recover_password a
+{
+	font-size:240%;
+	/* font-family:dotum; */
+	color: #FF0000;
+	padding-left:15%;
+}
+
+#con {
+	FONT-SIZE: 18px; MARGIN: 0px auto; WIDTH: 700px;height:400px;
+}
+#tags {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; WIDTH: 700px; PADDING-TOP: 0px; HEIGHT: 23px
+}
+#tags li {
+	BACKGROUND: url(../images/segmentation/tagleft.gif) no-repeat left bottom; FLOAT: left; MARGIN-RIGHT: 1px; LIST-STYLE-TYPE: none; HEIGHT: 23px
+}
+#tags li a {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(../images/segmentation/tagright.gif) no-repeat right bottom; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #999;LINE-HEIGHT: 23px; PADDING-TOP: 0px; HEIGHT: 23px; TEXT-DECORATION: none
+}
+#tags li.emptyTag {
+	BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 4px
+}
+#tags li.selectTag {
+	BACKGROUND-POSITION: left top; MARGIN-BOTTOM: -2px; POSITION: relative; HEIGHT: 25px
+}
+#tags li.selectTag a {
+	BACKGROUND-POSITION: right top; COLOR: #000; LINE-HEIGHT: 25px; HEIGHT: 25px
+}
+
+#tagContent {
+	BORDER-RIGHT: #aecbd4 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #aecbd4 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: #aecbd4 1px solid;PADDING-TOP:1px; BORDER-BOTTOM: #aecbd4 1px solid; BACKGROUND-COLOR: #fff
+}
+
+.tagContent {
+PADDING-RIGHT: 10px; DISPLAY: none; PADDING-LEFT: 10px; BACKGROUND: url(../images/segmentation/bg.gif) repeat-x; PADDING-BOTTOM: 10px; WIDTH: 677px; COLOR: #474747; PADDING-TOP: 10px; HEIGHT: 310px; text-align:center;
+}
+
+#tagContent DIV.selectTag {
+DISPLAY: block
+}
+
+/*css for index.jsp show div*/
+#out {border: 1px solid #003399;position: absolute;height: 240px;width: 150px;right: -100%;}
+#out #tit {background-color: #0099CC;position: relative;height: 100%;width: 15px;color: #FFFFFF;text-align: center;float: left;}
+#kong {position: absolute;width: 100%;overflow: hidden; top: 170px;right: 0px;}
+.right {float: right;width: 120px;padding:5px;line-height:25px;margin-top:20px;}
+.linkwords:link,.linkwords:visited {
+    color: #007DEF;
+    text-decoration: none;
+    font-size:93%;
+}
+.linkwords:hover{text-decoration:underline;}
+.words_no_link{color: #007DEF;}
+.error{
+	color: red;
+}

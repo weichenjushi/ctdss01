@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+	<!-- 数据库的表和对应的实体类 -->
+	<class name="wlh.web.test.User" table="user">
+		<!-- 数据库的主键 -->
+		<id name="id" type="int" column="id"><!-- 实体字段名，类型，数据库字段 -->
+			<generator class="native"></generator>
+		</id>
+		<!-- 数据库的其他字段 -->
+		<property name="name" type="string" column="name" />
+	</class>
+
+</hibernate-mapping>
+

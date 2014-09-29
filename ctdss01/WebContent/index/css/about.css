@@ -1,0 +1,257 @@
+/*css for all pages in about*/
+html
+{
+	*zoom:1;*overflow-x:hidden;margin: 0;padding:0;height: 100%; 
+}
+
+body
+{
+	color:#505050;
+	margin-left:1%;
+	width:99%;
+	min-width:1280px;
+	behavior:url("/css/csshover.htc");
+	word-wrap:break-word;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    padding:0;height: 97%; 
+}
+
+.forshowfooter1{position:relative;height:100%;min-height:100%;height:auto;position:relative;}
+.forshowfooter2{margin:0 auto;padding-bottom:7%;}
+
+.menubutton
+{
+	padding-left:150px;
+	width:400px;
+	height:90px;
+	text-align:center;
+}
+
+.menu
+{
+    width:100px;  
+    height:26px;  
+	padding: 7px 6px 0; 
+	background: #DBDBDB repeat-x 0 -110px; 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 15px; 
+	position:absolute;
+	text-decoration:none;
+	color:black;
+}
+
+.null_50
+{
+	height:50px;
+}
+
+.margin
+{
+	margin-top:50px;
+}
+.indexfooter
+{
+	border-top:1px solid #e0e0e0;
+	padding-top:1%;
+	text-align:center;color:#757575;
+	display:block;
+	font-size:93%;
+	margin-right:1.5%;
+	position: absolute; 
+	bottom: 0; 
+	width: 99%; 
+	height: 50px;/*�Ų��ĸ߶�*/ 
+}
+
+.indexfooter a:link,.indexfooter a:visited
+{
+	text-decoration:none;
+	color:#007DEF;
+}
+
+.indexfooter a:hover{text-decoration:underline;}
+
+/*css for take_a_tour & support_us & feedback*/
+
+.center_div
+{
+	text-align:center;
+	margin-top:50px;
+}
+
+.center_div a:link,.center_div a:visited
+{
+	font-weight:bold;
+	text-decoration:none;
+	color:#007DEF;
+}
+
+.center_div a:hover{text-decoration:underline;}
+
+/*css for take_a_tour*/
+
+.table tr td
+{
+	text-align:left;
+	line-height:110px;
+}
+.table_button tr td
+{
+	text-align:center;
+	line-height:110px;
+}
+
+/*css for download*/
+.tabledownload tr td{text-align:center;line-height:55px;} 
+
+/*css for download_help*/
+.tabledownloadhelp tr td{text-align:center;line-height:80px;} 
+.title_help_download a:hover{text-decoration:none;}
+/*css for samples*/
+
+.samples
+{
+	color:#FF0000;
+	font-size:200%;
+	font-weight:bold;
+	margin-left:3%;
+}
+
+.button
+{
+	background: #0099CC;
+	width:100px;  
+    height:35px;
+	font-family:dotum;
+	color:white;
+	font-size:14px;
+}
+.title1
+{
+	font-size:135%;
+	margin-left:6%;
+}
+.title2
+{
+	font-size:115%;
+	margin-left:8%;
+}
+.title3
+{
+	font-size:105%;
+	margin-left:13%;
+}
+.title4
+{
+	font-size:91%;
+	margin-left:40%;
+}
+.table_samples
+{
+	margin-left:20%;
+}
+.picture
+{
+	margin-left:20%;
+}
+/*css for what's new & feedback_do*/
+.div_center
+{
+	height:400px;
+	width:1200px;
+	text-align:center;
+}
+
+/*css for feedback*/
+
+.message_board
+{
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+.message_board a
+{
+	font-size:300%;
+	/* font-family:dotum; */
+	color: #FF0000;
+	padding-left:15%;
+}
+
+.table_center
+{
+	line-height:50px;
+    margin: auto;
+	text-align:center;
+}
+
+.longinput
+{
+	height:30px;
+	width:400px;
+	border-radius:30px; 
+}
+
+.textarea{width:400px;}
+
+.button_feedback
+{
+	background: #0099CC;
+	width:200px;  
+    height:35px;
+	font-family:dotum;
+	color:white;
+	font-size:14px;
+}
+
+.div_content
+{
+	width:600px;
+	height:270px;
+	background-color:#F0F8FF;
+	border:solid 1px #d3d3d3; 
+	text-align:center;
+}
+/*css for about_us*/
+
+.centerdiv_about_us
+{
+	margin-left:80px;
+	margin-right:80px;
+	margin-top:30px;
+	line-height:30px;
+}
+.centerdiv_about_us
+{
+	font-size:15px;
+}
+/*css for help*/
+.div_help_content
+{
+	padding-left:5%;
+	padding-right:10%;
+	padding-bottom:2%;
+	margin-bottom:0;
+
+}
+/*css for support_us*/
+.div_support_us_words
+{
+	margin-left:3%;
+}
+.div_support_us_img
+{
+	margin-right:15%;
+}
+/*css for overview*/
+.title1_overview
+{
+	font-size:135%;
+}
+.title2_overview
+{
+	
+	font-size:110%;
+	margin-left:1%;
+}

@@ -1,0 +1,41 @@
+.dataresource {
+border: 1px solid #C5C5C5;
+float: left;
+width: 662px;
+}
+.datacon {
+padding: 10px;
+}
+.hotest {
+border-right: 1px dotted #787878;
+float: left;
+width: 48%;
+_margin-bottom: -14px;
+}
+a {
+text-decoration: none;
+}
+.modl01 {
+width: 100%;
+}
+.modl01 .Head {
+background: url(red.jpg) no-repeat scroll 0 0 transparent;
+padding-left: 25px;
+font-weight: bold;
+font-size: 15px;
+}
+.con01 {
+padding-bottom: 5px;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+.hotDownload li, .hotRecommend li {
+line-height: 22px;
+}
+.hotDownload li, .hotRecommend li{line-height:22px;}
+.hotDownload li span,.hotDownload li a span,.hotRecommend li span,.hotRecommend li a span{color:#535353;}
+.spnTitle{font-weight:bold;color:#535353;margin-right:10px;}
+.spnHits{font-weight:bold;}
+.spnTime{float:right;margin-left:4px;color:#535353;}

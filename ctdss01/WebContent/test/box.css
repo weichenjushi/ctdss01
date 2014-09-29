@@ -1,0 +1,114 @@
+@CHARSET "UTF-8";
+.juhe-box{
+	width:99%;
+	margin:0 auto;
+	background:#FFF;
+	/*
+	-moz-border-radius: 6px; 
+	-khtml-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px 0px 6px 0px;	
+	*/
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+	
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	
+	border:2px solid #00b7ee;
+	/*
+    -webkit-box-shadow:1px 1px 1px #00b7ee, -1px -1px 1px #00b7ee;
+    -moz-box-shadow:1px 1px 1px #00b7ee, -1px -1px 1px #00b7ee;
+    box-shadow:1px 1px 1px #00b7ee, -1px -1px 1px #00b7ee;
+	*/
+	font-family:"Microsoft Yahei";
+	margin-bottom:10px;
+}
+.juhe-box a{ color:#2AABE4}
+.juhe-box .juhe-box-left{
+	width:30%;
+	float:left;
+	background:#F7F7F7;
+	color:#666;
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+	min-height:620px;
+}
+.juhe-box .juhe-box-left .juhe-box-tag{ 
+	line-height:30px; background:#2AABE4; color:#FFF; font-size:14px; padding-left:10px;
+	-moz-border-radius-topleft:6px;
+	-webkit-border-top-left-radius:6px;
+	border-top-left-radius:6px;
+}
+.juhe-box .juhe-box-left input,.juhe-box .juhe-box-left select{
+	color:#333;
+	font-family:"Courier New", Courier, monospace,"Microsoft Yahei";
+}
+.juhe-box .juhe-box-left .data-select{ line-height:40px; padding-left:20px; margin-top:20px}
+.juhe-box .juhe-box-left .data-line{
+	width:80%; margin:0 auto; border-bottom:1px solid #E2E2E2; height:10px; margin-bottom:10px;
+}
+.juhe-box .juhe-box-left .data-apis{ 
+	line-height:40px; padding-left:20px;
+}
+.juhe-box .juhe-box-left .data-appkey{ font-family:"Courier New", Courier, monospace; line-height:40px; padding-left:20px}
+.juhe-box .juhe-box-left .data-appkey .values{ color:#FF6600}
+.juhe-box .juhe-box-left .data-request-type{ ; line-height:40px; padding-left:20px}
+.juhe-box .juhe-box-left .data-request-type{ ; line-height:40px; padding-left:20px}
+.juhe-box .juhe-box-left .data-api-link{ line-height:40px; padding-left:20px}
+.juhe-box .juhe-box-left .data-request-dtype{ line-height:40px; padding-left:20px}
+.juhe-box .juhe-box-left .data-params{ 
+	width:90%; margin:0 auto; background:#fff; line-height:40px; padding-left:20px; padding-bottom:20px; padding-left:10px;
+	-moz-border-radius: 6px; 
+	-khtml-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px;
+	margin-top:10px;
+}
+.juhe-box .juhe-box-left .data-params>div{ padding-left:20px}
+.juhe-box .juhe-box-left .box-btn{ text-align:center; margin-top:20px;line-height:40px; margin-bottom:10px;}
+
+
+
+.juhe-box .juhe-box-right{
+	width:69%;
+	float:right;
+	color:#333;
+}
+.juhe-box .juhe-box-right .request-content{
+	width:100%;
+	line-height:30px;
+	margin-top:20px;
+	color:#666
+}
+.juhe-box .juhe-box-right .request-content .show{
+	width:95%;
+	height:200px;
+	border:1px solid #999;
+	overflow-y:scroll;
+	padding:0px 10px 0px 10px;
+	font-family:"Courier New", Courier, monospace;
+}
+.juhe-box .juhe-box-right .response-content{
+	width:100%;
+	line-height:40px;
+	margin-bottom:30px;
+}
+
+.juhe-box .juhe-box-right .response-content .show{
+	width:95%;
+	height:300px;
+	border:1px solid #999;
+	overflow-y:scroll;
+	padding:0px 10px 0px 10px;
+	line-height:20px;
+	font-family:"Courier New", Courier, monospace;
+	color:#359136
+}
+
+#boxBtn{ color:#FFF}
+.cutime{font-family:"Courier New", Courier, monospace;}
+

@@ -1,0 +1,56 @@
+﻿/* CSS Document */
+
+.content {
+width: 1017px;
+height: 270px;
+margin: auto;
+display: block;
+margin-top: 100px;
+margin-left:0px;
+
+}
+.content1 {
+height: 268px;
+width: 500px;
+padding: 0px;
+text-align: left;
+background-image: url(../images/content1.jpg);
+display: block;
+
+}
+.content2 {
+float:left;
+width: 500px;
+height: 268px;
+padding: 0px;
+margin-top: -270px;
+margin-left:50%;
+background-image: url(../images/content2.jpg);
+display: block;
+}
+#title {
+height: 29px;
+background-color: #f8f8f8;
+width: 100%;
+font-size: 24px;
+font-weight: bold;
+vertical-align: bottom;
+text-align: center;
+}
+#postime{
+vertical-align: inherit;
+border-color: inherit;
+height: 29px;
+background-color: #f8f8f8;
+width: 100%;
+color: #991010;
+font-size: 14px;
+text-align: center;
+margin-top: 20px;
+}
+#newscontent{
+width:70%;
+margin:auto;
+padding:0;
+}
+

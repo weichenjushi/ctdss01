@@ -1,0 +1,131 @@
+.mt10 {
+margin-top: 10px;
+}
+.w800 {
+width: 800px;
+}
+.r {
+float: right;
+display: inline;
+}
+.inp_btn5 {
+padding: 0 10px;
+height: 22px;
+text-align: center;
+width: auto;
+vertical-align: middle;
+background-color: #b87337;
+color: #fff;
+font: bold 12px/22px "microsoft yahei";
+display: inline-block;
+border: 0;
+cursor: pointer;
+}
+.mr5 {
+margin-right: 5px;
+}
+.yellow_prom {
+border: 1px solid #F0EACA;
+background: #FFFCEB;
+color: #C26462;
+padding: 7px 10px;
+}
+.mt20 {
+margin-top: 20px;
+}
+.data_commb {
+border: 1px solid #ccc;
+margin-top: 25px;
+padding-bottom: 15px;
+}
+.data_prod {
+background: #FCFCFC;
+padding: 10px;
+}
+.fc_gray3 {
+color: #333;
+}
+.fs14 {
+font-size: 14px;
+}
+.data_commbox {
+margin-top: 30px;
+}
+.clearfix {
+display: block;
+}
+.data_lcomm {
+float: left;
+border-right: 1px solid #ccc;
+}
+.data_per {
+text-align: center;
+padding: 25px 60px 0 35px;
+float: left;
+}
+.data_per p {
+font: bold 24px "microsoft yahei";
+color: #FE0000;
+}
+.data_per span {
+font-weight: bold;
+color: #999;
+}
+.data_r {
+width: 270px;
+margin-left: 145px;
+}
+.data_r p {
+padding: 5px 0 10px;
+}
+.data_commline {
+display: inline-block;
+margin: 0 5px 0 15px;
+width: 100px;
+height: 13px;
+background: #EFEFEF;
+}
+.vam {
+vertical-align: middle;
+}
+.data_rcomm {
+text-align: center;
+margin-left: 430px;
+}
+.comm_inte {
+margin-left: 0;
+font-size: 18px;
+padding: 5px 15px 5px 15px;
+font-weight: bold;
+background-position: 145px -1291px;
+/* background-color: #f00;
+color:fff; */
+background:gray; 
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+border-bottom-right-radius: 0px/*{cornerRadius}*/;
+}
+.ui-tabs .ui-tabs-nav {
+margin: 0;
+padding: .2em .2em 0;
+background:#FF6600; 
+}
+.ui-tabs .ui-tabs-nav li {
+list-style: none;
+float: left;
+position: relative;
+top: 0;
+margin: 1px .2em 0 0;
+border-bottom-width: 0;
+padding: 0;
+white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+cursor: pointer;
+}
+.ui-tabs .ui-tabs-nav li a {
+float: left;
+padding: .7em 1.5em;
+font-size: 14px;
+text-decoration: none;
+}

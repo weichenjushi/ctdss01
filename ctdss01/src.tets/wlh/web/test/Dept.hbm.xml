@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+	<class name="wlh.web.test.Dept" table="dept" catalog="bank">
+		<id name="depno" type="java.lang.Integer">
+			<column name="depno" />
+			<generator class="native" />
+		</id>
+		<property name="depname" type="java.lang.String">
+			<column name="depname" />
+		</property>
+		<set name="emps" inverse="true">
+			<key>
+				<column name="depno" />
+			</key>
+			<one-to-many class="wlh.web.test.Emp" /><!-- 一对多关系映射 -->
+		</set>
+	</class>
+</hibernate-mapping>
+

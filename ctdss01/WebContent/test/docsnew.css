@@ -1,0 +1,185 @@
+@CHARSET "UTF-8";
+*{padding:0; margin:0;}
+.clear{zoom:1;}
+.clear:after{display:block; content:""; clear:both;}
+
+#docs-main{position:relative;width:100%; min-height:985px; margin:0 auto; padding:0 0 180px 0; background:#f8f8f8;}
+#main {/*width:985px;*/width:90%; margin:0 auto; position:relative;z-index:1;background:#f8f8f8;}
+.title {font:normal 20px/44px "幼圆","微软雅黑","黑体"; color:#777; padding-top:45px; height:44px; border-bottom:2px solid #d2d2d2;}
+#data_index {padding-top:15px;}
+
+/* 选项卡 */
+.tabUl1{position:absolute; top:20px; right:0;}
+.tabUl1 li{float:left; font-size:14px; padding:0 20px; position:relative;z-index:1;}
+.tabUl1 li a{color:#aaa; display:inline-block; height:40px; line-height:40px;}
+.tabUl1 .selected1 a, #docs-main .tabUl1 li a:hover {background:url(../images/data/doc_hover.png) center bottom no-repeat;color:#00b7ee; cursor:pointer;}
+.box_data{}
+/* 数据列表 */
+.data_ul{padding:14px 2px 0 1px;}
+.data_ul li{float:left; width:119px; height:110px;  text-align:center;_overflow:hidden; margin-top:10px;  margin-bottom:10px;list-style: none;}
+.data_ul li:nth-child(8n+1){padding-left:0;}
+.allBox1{height:250px;}
+.data_ul li .divimg{padding:0 20px; height:60px; width:60px;}
+.data_ul li h2{padding:10px 10px 8px 10px; line-height:16px;}
+.data_ul li h2 a{color:#999; font:normal 12px/16px '宋体';}
+.sub_title{width:220px; float:left; margin-left:20px;}
+/*交通服务图标*/
+.data_ul li div a{display:inline-block; height:60px; width:60px; margin-left:10px;  background:url(../index/images/data/doc_data.png) no-repeat #f8f8f8;}
+#docs-main .data_ul li div .barcode_data{background:url(../index/images/data/doc_data.png) center center no-repeat;}
+#docs-main .data_ul li div .dianshang_data{background:url(../index/images/data/doc_data.png) center center no-repeat;}
+#docs-main .data_ul li div .bijia_data{background:url(../index/images/data/doc_data.png) center center no-repeat;}
+
+.data_ul li .vip_data{background:url(../images/data/vip.png) no-repeat; position:relative; top:-76px; left:26px;}
+/*.data_ul li .new_data{background:url(../images/data/new.png) no-repeat; position:relative; top:-66px; left:36px;}*/
+.data_ul li .new_data{background:url(../images/data/docs.new.png) no-repeat; position:relative; top:-66px; left:-2px;}
+.data_ul li .hot_data{background:url(../images/data/docs.hot.png) no-repeat; position:relative; top:-66px; left:-2px;}
+.data_ul li .update_data{background:url(../images/data/docs.update.png) no-repeat; position:relative; top:-66px; left:-2px;}
+
+/**/
+.data_infor{position:relative; z-index:99; left:-80px; width:240px; background:#fff;filter: alpha(opacity=90); opacity: 0.90;color:#95ba12; padding:10px 10px;text-align:center; border:1px solid #bbb;box-shadow:0 1px 2px rgba(0,0,0,0.2); border-radius:3px;font:normal 12px/16px '幼圆','宋体'; display:none;}
+.data_infor:after, .data_infor:before{bottom:100%;border:6px solid transparent; content:" ";width:0; height:0;position:absolute;}
+.data_infor:after{border-bottom-color:#fff;left:50%;border-width:5px;margin-left:-5px;}
+.data_infor:before {border-bottom-color:#aaa;border-width:6px; left:50%; margin-left:-6px;}
+
+/* 聚合SDK,定位服务,LBS数据,坐标服务 */
+#docs-main .data_ul li div .geo_android_sdk_data{background-position:0 0;}
+/* #docs-main .data_ul li div .cellmapsdk_data{background-position:-60px 0;} */
+#docs-main .data_ul li div .cdma_data{background-position:-120px 0;}
+#docs-main .data_ul li div .cell_data{background-position:-180px 0;}
+#docs-main .data_ul li div .baidu_data{background-position:-240px 0;}
+#docs-main .data_ul li div .google_data{background-position:-300px 0;}
+#docs-main .data_ul li div .offset_data{background-position:-360px 0;}
+#docs-main .data_ul li div .geo_data{background-position:-420px 0;}
+/*-- 餐饮菜谱 */
+#docs-main .data_ul li div .cook_data{background-position:0px -60px;}
+#docs-main .data_ul li div .catering_data{background-position:-60px -60px;}
+/*-- 生活常用 */
+#docs-main .data_ul li div .wz_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+
+/*中国地图的处理*/
+#query{center no-repeat;width:530px;height:453px;margin:auto;padding:0;}
+/* #query{background:url(../images/china.jpg) center no-repeat;width:530px;height:453px;margin:auto;padding:0;} */
+#out {
+border: 1px solid #003399;
+position: absolute; 
+height: 150px;
+width: 5px;
+/* margin-top: -180px; */
+/* right: -100%; */
+right:0%;
+padding-right:5%;
+}
+#out #tit {
+background-color: #0099CC;
+position: relative;
+height: 100%;
+width: 25px;
+color: #FFFFFF;
+text-align: center;
+float: left;
+}
+.right {
+/* float: right; */
+width: 120px;
+padding-left: 55px;
+line-height: 25px;
+margin-top: 20px;
+}
+.words_no_link {
+color: #007DEF;
+}
+
+
+/* #docs-main .data_ul li div .oil_data{background-position:-120px -60px;}
+#docs-main .data_ul li div .wifi_data{background-position:-180px -60px;}
+#docs-main .data_ul li div .plane_data{background-position:-240px -60px;}
+#docs-main .data_ul li div .train_data{background-position:-300px -60px;}
+#docs-main .data_ul li div .cnoil_data{background-position:-360px -60px;}
+#docs-main .data_ul li div .appleinfo_data{background-position:-420px -60px;}
+#docs-main .data_ul li div .idcard_data{background-position:0px -120px;}
+#docs-main .data_ul li div .weather_data{background-position:-60px -120px;}
+#docs-main .data_ul li div .exp_data{background-position:-120px -120px;}
+#docs-main .data_ul li div .exam_data{background-position:-180px -120px;}
+#docs-main .data_ul li div .goodbook_data{background-position:-240px -120px;} */
+
+/* #docs-main .data_ul li div .oil_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .wifi_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .plane_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .train_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .cnoil_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .appleinfo_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .idcard_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .weather_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .exp_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .exam_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .goodbook_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;} */
+/* #docs-main .data_ul li div a{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;} */
+#docs-main .data_ul li .airplane{background:url(../index/images/data/airplane.png) 0 0 no-repeat;}
+#docs-main .data_ul li .subway{background:url(../index/images/data/subway.png) 0 0 no-repeat;}
+#docs-main .data_ul li .supervision{background:url(../index/images/data/supervision.png) 0 0 no-repeat;}
+#docs-main .data_ul li .ship{background:url(../index/images/data/ship.png) 0 0 no-repeat;}
+#docs-main .data_ul li .hotds{background:url(../index/images/data/hotds.png) 0 0 no-repeat;}
+#docs-main .data_ul li .newds{background:url(../index/images/data/newds.png) 0 0 no-repeat;}
+
+
+#docs-main .data_ul li div .mobile_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .whois_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .webscan_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .rmb_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .waterq_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .alexa_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+#docs-main .data_ul li div .lottery_data{background:url(../index/images/data/doc_data1.png) 0 0 no-repeat;}
+
+/*-- 影视咨询 */
+#docs-main .data_ul li div .movie_data{background-position:-300px -120px;}
+#docs-main .data_ul li div .boxoffice_data{background-position:-360px -120px;}
+/*-- 站长工具 */
+/* #docs-main .data_ul li div .whois_data{background-position:-420px -120px;}
+#docs-main .data_ul li div .webscan_data{background-position:0px -180px;}
+#docs-main .data_ul li div .alexa_data{background-position:-60px -180px;}
+#docs-main .data_ul li div .ip_data{background-position:-180px -180px;}
+#docs-main .data_ul li div .mobile_data{background-position:-120px -180px;} */
+/*-- 金融数据 */
+/* #docs-main .data_ul li div .stock_data{background-position:-240px -180px;}
+#docs-main .data_ul li div .rmb_data{background-position:-300px -180px;}
+#docs-main .data_ul li div .gold_data{background-position:-360px -180px;} */
+/*-- 基金数据 */
+/* #docs-main .data_ul li div .netdata_data{background-position:-420px -180px;}
+#docs-main .data_ul li div .suspend_data{background-position:0px -240px;}
+#docs-main .data_ul li div .zcgjj_data{background-position:-60px -240px;}
+#docs-main .data_ul li div .findata_data{background-position:-120px -240px;} */
+/*-- 区域数据 */
+/* #docs-main .data_ul li div .szbusline_data{background-position:-180px -240px;}
+#docs-main .data_ul li div .szbike_data{background-position:-240px -240px;} */
+/*-- 环境质量监测 */
+/* #docs-main .data_ul li div .airq_data{background-position:-300px -240px;}
+#docs-main .data_ul li div .waterq_data{background-position:-360px -240px;} */
+/*-- 地产数据 */
+/* #docs-main .data_ul li div .estate_data{background-position:-420px -240px;} */
+
+
+
+/* #docs-main .data_ul li div .lottery_data{background:url(../images/data/lottery.png) center center;} */
+#docs-main .data_ul li div .sms_data{background:url(../images/data/sms.png) center center;}
+#docs-main .data_ul li div .sms_f_data{background:url(../images/data/sms_f.png) center center;}
+#docs-main .data_ul li div .f_data{background:url(../images/data/f.png) center center;}
+
+
+/****/
+#docs-main .data_ul li div .video_data{background:url(../images/data/a55.png) center center;}
+#docs-main .data_ul li div .recruitment_data{background:url(../images/data/a56.png) center center;}
+#docs-main .data_ul li div .trip_data{background:url(../images/data/a57.png) center center;}
+#docs-main .data_ul li div .astro_data{background:url(../images/data/a58.png) center center;}
+#docs-main .data_ul li div .guahao_data{background:url(../images/data/a59.png) center center;}
+
+/* rightNav */
+#rightNav{position:fixed; right:40px;top:240px;width:32px; background:url(../images/data/doc_navR.png) -64px 0 repeat-y; text-align:center; _display:none;}
+#rightNav .rightNav{background:url(../images/data/doc_navR.png) 0 0 no-repeat;}
+#rightNav ul{background:url(../images/data/doc_navR.png) -32px bottom no-repeat; padding-top:10px;}
+#rightNav ul li{height:10px; padding-bottom:10px; position:relative;}
+#rightNav ul li span{display:inline-block; visibility:hidden; text-align:right; width:90px;font-size:12px; color:#aaa; position:absolute; left:-95px; top:-4px;}
+#rightNav ul li a{height:10px; display:block; background:url(../images/data/doc_dian.png) 10px 0 no-repeat; text-align:center;}
+#rightNav ul li a:hover{background-position:10px -40px;}
+#rightNav ul .selected2 a:hover{background-position:10px -20px;}
+#rightNav ul .selected2 a{background-position:10px -20px;}
+#rightNav ul .selected2 span{color:#00b7ee; visibility:visible;}

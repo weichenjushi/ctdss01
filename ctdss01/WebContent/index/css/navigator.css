@@ -1,0 +1,75 @@
+/*css for all pages in about*/
+html
+{
+	*zoom:1;*overflow-x:hidden;margin:0;padding:0;height:100%; 
+}
+
+body
+{
+	color:#505050;
+	margin-left:1%;
+	width:99%;
+	min-width:1280px;
+	behavior:url("/css/csshover.htc");
+	word-wrap:break-word;
+    font: 13px/1.231 arial,helvetica,clean,sans-serif;
+    padding:0;height: 97%;
+}
+
+.forshowfooter1{position:relative;height:100%;min-height:100%;height:auto;position:relative;}
+.forshowfooter2{margin:0 auto;padding-bottom:7%;}
+
+.indexfooter
+{
+	border-top:1px solid #e0e0e0;
+	padding-top:1%;
+	text-align:center;color:#757575;
+	display:block;
+	font-size:93%;
+	margin-right:1.5%;
+	position: absolute; 
+	bottom: 0; 
+	width: 99%; 
+	height: 50px;/*脚部的高度*/ 
+}
+
+.indexfooter a:link,.indexfooter a:visited
+{
+	text-decoration:none;
+	color:#007DEF;
+}
+
+.indexfooter a:hover{text-decoration:underline;}
+
+.center_div
+{
+	text-align:center;
+	margin-top:4%;
+	margin-bottom:4%;
+}
+
+.center_div a:link,.center_div a:visited
+{
+	font-weight:bold;
+	text-decoration:none;
+	color:#007DEF;
+}
+
+.center_div a:hover{text-decoration:underline;}
+
+.table tr td {
+    line-height: 400px;
+    text-align: center;
+}
+
+#form{float: left;margin-top:3%;margin-left:10%;}
+
+#map {
+	margin-top:3%;
+	width: 700px;
+	height: 525px;
+	border: 1px solid #000;
+}
+
+.addressform{margin-top:15px;}
+.show_place{margin-left:10%;}

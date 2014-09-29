@@ -1,0 +1,52 @@
+﻿/* CSS Document */
+.contents {
+margin-bottom: 10px;
+width: 100%;
+margin-bottom: 0;
+}
+.dataresource {
+border: 1px solid #C5C5C5;
+float: left;
+width: 662px;
+}
+.datacon {
+padding: 10px;
+}
+.hotest {
+border-right: 1px dotted #787878;
+float: left;
+width: 48%;
+margin-bottom: -14px;
+}
+.modl01 {
+width: 100%;
+}
+H3 {
+font-family: Tahoma, Arial, Helvetica;
+font-size: 12px;
+font-weight: normal;
+color: #003366;
+}
+.modl01 h3 {
+margin-bottom: 5px;
+}
+.con01 {
+padding-bottom: 5px;
+}
+
+
+
+
+.recommend {
+float: right;
+width: 48%;
+margin-bottom: -14px;
+}
+.modl02 {
+width: 100%;
+}
+.clearfix {
+clear: both;
+zoom: 1;
+height: 0;
+}

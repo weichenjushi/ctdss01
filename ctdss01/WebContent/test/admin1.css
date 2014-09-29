@@ -1,0 +1,33 @@
+﻿@charset "UTF-8";
+
+
+/*table*/
+.bg_tb{margin:0 auto;}
+.bg_tb a{text-decoration:none; color:#00b7ee; font-family:"幼圆","微软雅黑","宋体"}
+.tr_title{font-size:14px;line-height:25px;font-family:"Microsoft YaHei";background:#f2f2f2;}
+.tr_content{font-size: 12px;line-height:25px;font-family: "Microsoft Yahei","黑体","宋体";}
+.bg_tb td{border-bottom:1px solid #FFF}
+.td_bottom_line{border-bottom:1px solid #09C;}
+
+/*Page List Css*/
+.appPages{
+	width:100%;
+	text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-indent:0;
+}
+.appPages a{
+	height:25px;
+	line-height:25px;
+	background:#37aad7;
+	margin-left:10px;
+	text-align:center;
+	padding:0px 10px 0px 10px;
+	display:inline-block;
+	color:#FFF
+}
+.appPages .pageSel{
+	background:#86a0a8
+}
+

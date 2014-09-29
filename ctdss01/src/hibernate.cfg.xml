@@ -1,0 +1,32 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 1.数据库连接信息  -->
+		<!-- 1.0数据库方言  -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 1.0数据库驱动，url，用户名，密码  -->
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<!-- 2.其他配置文件 -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		
+		<!-- <property name="hibernate.hbm2ddl.auto">create</property>
+			create: 先删表，再建表。
+			create-drop: 启动时建表，退出前删表。
+			update: 如果表结构不一致，就创建或更新。
+			validate: 启动时验证表结构，如果不致就抛异常。
+		 -->
+		<!-- 3.导入信息配置文件 -->
+		<!-- User实体表的配置信息 -->
+		<mapping resource="wlh/web/test/User.hbm.xml" />
+		<mapping resource="wlh/web/test/Dept.hbm.xml" />
+		<mapping resource="wlh/web/test/Emp.hbm.xml" />
+		
+	</session-factory>
+</hibernate-configuration>

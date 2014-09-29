@@ -1,0 +1,16 @@
+
+.header{margin-right:1.5%;}
+.nav-head{background:url(../../images/logos/logodss.png) 0 0 no-repeat;font-family: verdana, arial, sans-serif; list-style:none; height:80px; padding:0; margin:0; padding-left:340px; border-bottom:2px solid #e0e0e0;}
+.nav-head li{float:left; position:relative; list-style:none;}
+.nav-head li.cur a{color:#f00;}
+.nav-head li.l{width:19%;}
+.nav-head li.ls{width:16%;}
+.nav-head li.lss{width:12%;}
+.nav-head li.lsss{width:8%;}
+.nav-head li.lssss{width:7%;}
+.nav-head li:hover{background-color:#faeaea;}
+.nav-head a{font-size:130%; text-align:center; text-decoration:none; display:block; line-height:80px; color:#666666;}
+.nav-head div{display:none; background-color:#fff; border:1px solid #e0e0e0;z-index:999; position:absolute; top:80px; left:0; width:100%;}
+.nav-head li:hover div{display:block;}
+.nav-head li:hover div a{line-height:36px; color:#000; font-size:85%;}
+.nav-head li:hover div a:hover{background-color:#fff; color:#EE2424;}
