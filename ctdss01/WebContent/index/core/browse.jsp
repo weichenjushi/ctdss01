@@ -14,8 +14,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="test/docsnew.css">
 	
 	<style type="text/css">
-	
+	.menu2{width:100px;height:50px;border:solid 1px gray;cursor:pointer;background:blue;}
 	</style>
+	<script type="text/javascript">
+	function test(id){
+		alert(id);
+		//document.getElementById(id).innerHTML=<font color='red'>bj</font>;
+		
+	}
+	</script>
 	<script type="text/javascript" src="index/js/prototype.js"></script>
 	<script type="text/javascript" src="test/jquery.min.js"></script>
     <title>城市交通数据服务空间</title>
@@ -50,101 +57,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</ul>
 
 	<div id="bd">
-	<!-- <div id="leftbrowsediv1">
-         	<div class="bbd">Browse by Domain</div>
-         	<div class="servicetype"><ul id="topnav1"></ul></div>	
-        </div> /#leftbrowsediv  
-		<div id="leftbrowsediv2">
-			<div id ="biankuang1">
-				<div id ="biankuang2">
-					<br>
-					<div id="dds">&nbsp;Discover Data Services</div>
-					<br>
-					<div class="searchdata">
-						<input name="searchdata" type="text" id="searchInputdata" onfocus="qk()" onblur="mr()" value="Search data service name,or description">
-						<strong>&nbsp;&nbsp;in&nbsp;&nbsp;</strong>
-						<select name="selectDomain" id="selectDomain">
-						  <option selected>Domain</option>
-						  <option>Any Domain</option>
-					    </select>
-			        	<strong>&nbsp;&nbsp;Sort&nbsp;by&nbsp;&nbsp;</strong>
-						<select name="selectRelevance" id="selectRelevance">
-							<option selected>Relevance</option>
-							<option>Created by</option>
-							<option>Created on</option>
-							<option>Last Updated</option>
-							<option>Update Frequency</option>
-							<option>Response Time</option>
-							<option>Total Rows</option>
-							<option>Data Volumn</option>
-						</select> 
-					</div>/#searchdata 
-					<br>
-					<div class="exampledata">
-						Examples:
-						<a class="navlink" href="javascript:findExamples('Publichealth Emergency')">Publichealth Emergency &nbsp;&nbsp;</a>
-						<a class="navlink" href="javascript:findExamples('Medical treatment')">Medical treatment</a>
-					</div>
-					<br>
-					<div class="searchdata">
-						Only show data services owned by user
-						<input type="text" name="showuser" id="showuser">
-					</div>
-					<div class="searchbutton">
-						<a class="navlink" href="javascript:reset()"><b>Reset</b></a>
-						<input type="button" name="finddata" value="Find Data Services" onClick="findDataServices()" >
-					</div>
-				</div>
-			</div>
-		</div> -->
-		 <!--/#leftbrowsediv --> 
-<!--         <div id="leftbrowsediv1"> -->
-<!--          	<div class="bbd">分类浏览</div> -->
-<!--          	<div class="servicetype"><ul id="topnav1"></ul></div>	 -->
-<!--         </div> /#leftbrowsediv   -->
-<!-- 		<div id="leftbrowsediv2"> -->
-<!-- 			<div id ="biankuang1"> -->
-<!-- 				<div id ="biankuang2"> -->
-<!-- 					<br> -->
-<!-- 					<div id="dds">&nbsp;浏览数据服务</div> -->
-<!-- 					<br> -->
-<!-- 					<div class="searchdata"> -->
-<!-- 						<input name="searchdata" type="text" id="searchInputdata" onfocus="qk()" onblur="mr()" value="Search data service name,or description"> -->
-<!-- 						<strong>&nbsp;&nbsp;in&nbsp;&nbsp;</strong> -->
-<!-- 						<select name="selectDomain" id="selectDomain"> -->
-<!-- 						  <option selected>区域</option> -->
-<!-- 						  <option>任何区域</option> -->
-<!-- 					    </select> -->
-<!-- 			        	<strong>&nbsp;&nbsp;Sort&nbsp;by&nbsp;&nbsp;</strong> -->
-<!-- 						<select name="selectRelevance" id="selectRelevance"> -->
-<!-- 							<option selected>相关度</option> -->
-<!-- 							<option>被谁创建</option> -->
-<!-- 							<option>创建时间</option> -->
-<!-- 							<option>最后修改时间</option> -->
-<!-- 							<option>更新频率</option> -->
-<!-- 							<option>响应时间</option> -->
-<!-- 							<option>总行数</option> -->
-<!-- 							<option>数据列数</option> -->
-<!-- 						</select>  -->
-<!-- 					</div>/#searchdata  -->
-<!-- 					<br> -->
-<!-- 					<div class="exampledata"> -->
-<!-- 						Examples: -->
-<!-- 						<a class="navlink" href="javascript:findExamples('Publichealth Emergency')">Publichealth Emergency &nbsp;&nbsp;</a> -->
-<!-- 						<a class="navlink" href="javascript:findExamples('Medical treatment')">Medical treatment</a> -->
-<!-- 					</div> -->
-<!-- 					<br> -->
-<!-- 					<div class="searchdata"> -->
-<!-- 						Only show data services owned by user -->
-<!-- 						<input type="text" name="showuser" id="showuser"> -->
-<!-- 					</div> -->
-<!-- 					<div class="searchbutton"> -->
-<!-- 						<a class="navlink" href="javascript:reset()"><b>重填</b></a> -->
-<!-- 						<input type="button" name="finddata" value="查询" onClick="findDataServices()" > -->
-<!-- 					</div> -->
-<!-- 				</div> -->
-<!-- 			</div> -->
-<!-- 		</div> /#leftbrowsediv  -->
 
 		<div>
 		<div style="margin-left:100px;">
@@ -156,8 +68,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	    <div id="query" style="display:none;"><img src="<%=basePath%>images/china.jpg" alt="网站地图" width="530" height="453" border="0" usemap="#Map" />
 	    	
 	      <map name="Map" id="Map">
-			<area shape="rect" coords="373,159,391,169"  onclick="initDataServicesByCtid('bj')"  alt="北京市"/>
-            <area shape="rect" coords="421,267,440,278" onclick="initDataServicesByCtid('sh')" alt="上海市"/>
+			<area shape="rect" coords="373,159,391,169" href="javascript:void(0);" onclick="initDataServicesByCtid('bj')"  alt="北京市"/>
+            <area shape="rect" coords="421,267,440,278" href="javascript:void(0);" onclick="initDataServicesByCtid('sh')" alt="上海市"/>
           </map>
 	    </div>
 	    
@@ -211,20 +123,6 @@ function initcomplete(){
 	if (req.readyState == 4) { 
 	  if (req.status == 200) { 
 		  document.getElementById('main2').innerHTML = req.responseText; 
-		  
-		     /* theTable = document.getElementById("table2");
-		     totalPage = document.getElementById("spanTotalPage");
-		     pageNum = document.getElementById("spanPageNum");
-
-		     spanPre = document.getElementById("spanPre");
-		     spanNext = document.getElementById("spanNext");
-		     spanFirst = document.getElementById("spanFirst");
-		     spanLast = document.getElementById("spanLast");
-
-		     numberRowsInTable = theTable.rows.length; */
-		     
-
-		    
 	  }
 	}
 }
