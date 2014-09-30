@@ -61,7 +61,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div>
 		<div style="margin-left:100px;">
 			<ul>
-			<li style="list-style:lower-roman;width: 300px;height:10px;color: gray;">目前仅有北京、上海，其他城市数据持续更新...</li>
+			<li style="list-style:lower-roman;width: 500px;height:10px;color: gray;">目前仅有北京、上海，请点击地图上城市名称进行查看，其他城市数据持续更新...</li>
 			<li style="list-style:lower-roman;width: 300px;height:10px;color: gray; margin-top:10px;">在地图上点击城市名进行数据服务的查询</li>
 			</ul>
 		</div>

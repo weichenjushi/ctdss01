@@ -196,7 +196,7 @@ public class BrowseServlet extends HttpServlet {
 		//获取最新通告
 		List<News> recentnews;
 		try {
-			recentnews = new NewService().recentnews();
+			recentnews = new NewService().recent(0);
 			if(recentnews!=null)
 			{
 				for (News news : recentnews) {
