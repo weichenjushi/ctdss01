@@ -189,7 +189,7 @@ public class BrowseServlet extends HttpServlet {
 		sb.append("</ul></div></div></div>"); // end ��ҳ��ݣ����š�����
 		
 		/*APP管理模块*/
-		//sb.append("<div style='float: right;width: 30%;height: 630px;margin-top: -12%;background-color:#00B4ED;'><ul><li style='list-style: none;'><font size='5'>APP����ģ��</font></li><li>�����ŵ�APP</li><li>���·�����APP</li></ul></div>");
+//		sb.append("<div style='float: right;width: 30%;height: 630px;margin-top: -12%;background-color:#00B4ED;'><ul><li style='list-style: none;'><font size='5'>APP模块管理</font></li><li>热门APP</li><li>最新APP</li></ul></div>");
 		
 		//3.最新通告
 		sb.append("<div class='content'><div class='content1'><div style='margin-left:100px;margin-top:120px;text-align:left;vertical-align: middle;'><br><br>");

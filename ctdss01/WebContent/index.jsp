@@ -1,154 +1,208 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%-- <% --%>
-<!-- String contextPath = request.getContextPath();  -->
-<!-- String headerReferer =request.getHeader("Referer");  -->
-<!-- String Path = null; -->
-<!-- if(headerReferer!=null) -->
-<!-- 	Path = headerReferer.substring(0,headerReferer.indexOf(contextPath)+contextPath.length()+1); -->
-<!-- %> -->
+<%@ page contentType="text/html;charset=UTF-8"%>
+<%@ page import="java.util.*"%>
+<%@ page trimDirectiveWhitespaces="true" %>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 <html>
 <head>
-<%--     <base href="<%=Path%>"> --%>
-	<base href="<%=basePath%>">
-	<meta property="qc:admins" content="72007744751114771664510063757" />
-    <title>欢迎使用城市交通数据服务空间</title>
-	<link rel="stylesheet" type="text/css" href="index/css/log_sign.css">
-	<link rel="stylesheet" type="text/css" href="index/css/head_menu.css">
-  </head>
-  <body onload="notice();">
-  <div class="forshowfooter1">
-	<jsp:include page="/public/head1.jsp"></jsp:include>
+<base href="<%=basePath%>">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+ <link rel="stylesheet" type="text/css" href="index/css/core_css/layout">
+    <link rel="stylesheet" type="text/css" href="index/css/core_css/index.css">  
+	<link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
+	<link rel="stylesheet" type="text/css" href="test/docsnew.css">
+	<link rel="stylesheet" type="text/css" href="test/news_content.css">
 	
-	<div class="div_center">
-		<p>
-			<img src="index/images/logos/puzzle2.jpg" width="40%" alt="Puzzle">
-		</p>
-	</div>
-	<div id="kong">
-	 	<!--浮动框-->
-		 <div id="out">
-			   <div id="tit">-</div>
-			   <div class="right">
-			  		<a class="words_no_link">本网站只能在火狐浏览器和谷歌浏览器中正常运行，推荐使用屏幕分辨率：1440*900。</a><br/>
-			   </div>
-		 </div>
-	</div>
-	<div class="forshowfooter2">
-		<table class="table" width=100%;>
-			<tr>
-				<td width="15%"></td>
-				<td>
-					<p>
-						<button class="button"  onclick="window.location.href='index/about/take_a_tour.jsp'">游览一番</button>
-					</p>
-				</td>
-				<td>
-					<p>
-						<button class="button" onclick="window.location.href='index/core/myindex.jsp'">进入</button>
-					</p>
-				</td>
-				<td width="15%"></td>
-			</tr>
-		</table>
-	</div>
-	<jsp:include page="/public/footer.jsp"></jsp:include>
+<!--[if IE]><style>.subactions { padding-right:8px;} 
+	.subactions.active padding-right:10px;} 
+	.subactions img { vertical-align:middle;  } 
+	#pipepreview h2 { border-top:2px solid #e4e4e4; }
+	</style>
+	<![endif]-->
+<title>城市交通数据服务空间</title>
+
+</head>
+<body onload="initDataServicesHome();" style="background-color: fff;" >
+
+	<div id="main" class="header" style="">
+
+			<ul class="nav-head">
+				<li class="lssss cur"><a href="index/core/myindex.jsp">首页</a></li>
+				<li class="ls"><a href="index/core/browse.jsp">浏览数据接口</a></li>
+				<li class="ls"><a href="APIServlet?method=viewmyapps">我的数据服务</a></li>
+				<li class="ls"><a href="index/core/create_mashup_traditional.jsp">常见问题</a></li>
+				<!-- 	<li class="l"><a><span>创建数据服务</span></a>
+				<div>
+					<a href="index/core/create_data_service_clipper.jsp">创建网页数据源</a>
+					<a href="index/core/create_data_service_wrapper.jsp">创建其他数据源</a>
+				</div>
+			</li> -->
+				<li class="lss"><a href="index/Navigator/index.jsp">应用</a></li>
+				<li class="lss"><a href="index/about/take_a_tour.jsp">帮助</a>
+					<!-- <div>
+						<a href="index/weixin/weixin.jsp">weixin</a>
+					</div> -->
+				</li>
+				<%
+					if (session.getAttribute("username") == null
+							&& session.getAttribute("adminname") == null) {
+				%>
+				<li class="lss"><a href="login.jsp">登录</a></li>
+				<li class="lss"><a href="signup.jsp">注册</a></li>
+				<%
+					} else {
+				%>
+				<li class="lsss"><a href="index/core/profile.jsp">用户中心</a></li>
+				<li class="lsss"><a href="logout.jsp">退出</a></li>
+				<%
+					}
+				%>
+			</ul>
+
 	
-  </div>
-  </body>
-    <script language="javascript">
-	var $ = function (d){return document.getElementById(d)};
-	var CLS={
-	   create: function() {
-		  return function() {
-			this.$ADD = function (fn){CLS.add(this,fn)};
-		    this.init.apply(this, arguments);
-		  }
-	   },
-	   add:function (obj,fn){
-		   fn.apply(obj,arguments);
-	   },
-	   enterFrame:function (){
-		    this.onEnterFrame=function (){};
-			this.$PLAY = function (g){
-				this.enterFrameP = this.enterFrameP || 10;
-				this.CLStimeIndex = CLS.ontimes.length;
-				CLS.ontimes.push(this);
-				window.clearTimeout(this.enterFrameTimeout);
-				window.clearInterval(this.enterFrameInterval);
-				if(g)this.enterFrameTimeout = window.setTimeout('CLS.ontimes['+this.CLStimeIndex+'].enterFrameInterval=window.setInterval("CLS.ontimes['+this.CLStimeIndex+'].onEnterFrame()",'+this.enterFrameP+')',parseInt(g*1000));
-				else this.enterFrameInterval = window.setInterval("CLS.ontimes["+this.CLStimeIndex+"].onEnterFrame()",this.enterFrameP);
+	<div id="bd">
+
+		
+		
+		
+       			
+       			
+       			
+       	<marquee >
+			<ul style="background: #00B4ED; color: #FFF; width: 300px; height: 80px; padding-top: 5px">
+				<li style="padding-left: 5px; width: 150px; height: 40px;list-style: none;">网站公告</li>
+				<li style="padding-left: 5px; width: 150px; height: 20px;list-style: none;">最新添加数据为：${ad}</li>
+			</ul>
+		</marquee>		
+		<div id="docs-main" >
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript">
+  function GetStr9(str)   
+  {   
+	var   len   =   0;   
+	var   lin   =   "";
+	var result="";
+	var resultLen=0;
+	for(var i=0;i<str.length;i++)   
+	{   
+	  	  if(str.charCodeAt(i)>255)   
+		len   +=   2   ; 
+	  else   
+		len++   ; 
+	  lin +=str.charAt(i);  							
+	  if(len>28) 
+	  { 
+	  	if(lin.length<str.length){
+	  	 	for(var j=0;j<str.length;j++){
+	  	 		 if(str.charCodeAt(j)>255) 
+	  	 		  resultLen+=2;
+	  	 		 else
+	  	 		 	resultLen++;
+	  	 		 result+=str.charAt(j);
+	  	 		 if(resultLen>=26){
+	  	 		 	 lin=result+'...';
+	  	 			 break;
+	  	 		 }
+	  	 		  
+	  		}
+	   	}
+		break;
+	  } 
+
+	}   
+	return   lin;     
+  }
+</script>
+		
+	
+      
+		
+       <div style="margin-top:-200px;">
+		
+		<div id="ft">
+			Copyright © 2014 | <a href="index/about/about_us.jsp">关于我们</a> |<a href="index/about/feedback.jsp"> 反馈</a>
+		</div>
+       </div>  			
+		<!--/#ft -->
+	</div>
+
+	<!--/#doc -->
+	</div>
+</body>
+<script language="javascript">
+	function initDataServicesHome() {
+		var url = "BrowseServlet?cmd=initHome";
+		if (window.XMLHttpRequest) {
+			req = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if (req) {
+			req.open("GET", url, true);
+			req.onreadystatechange = initcomplete1;
+			req.send(null);
+		}
+	}
+
+	function initcomplete1() {
+		if (req.readyState == 4) {
+			if (req.status == 200) {
+				document.getElementById('docs-main').innerHTML = req.responseText;
+				hide();
 			}
-			this.$STOP = function (){
-				window.clearInterval(this.enterFrameInterval);
+		}
+	}
+	function dataServices() {
+		var url = "myDataServiceServlet/myDataService?cmd=serviceitem";
+		if (window.XMLHttpRequest) {
+			req = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if (req) {
+			req.open("post", url, true);
+			req.onreadystatechange = dataServicescomplete;
+			req.send(null);
+		}
+	}
+
+	function dataServicescomplete() {
+		if (req.readyState == 4) {
+			if (req.status == 200) {
+				document.getElementById('content').innerHTML = req.responseText;
 			}
-			this.$SET = function (p){
-				this.enterFrameP = p;
+		}
+	}
+
+	function lastestdataServices() {
+		var url = "browseServlet/browse?cmd=popservice";
+		if (window.XMLHttpRequest) {
+			req1 = new XMLHttpRequest();
+		} else if (window.ActiveXObject) {
+			req1 = new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		if (req1) {
+			req1.open("post", url, true);
+			req1.onreadystatechange = lastestdataServicescomplete;
+			req1.send(null);
+		}
+	}
+
+	function lastestdataServicescomplete() {
+		if (req1.readyState == 4) {
+			if (req1.status == 200) {
+				document.getElementById('content1').innerHTML = req1.responseText;
 			}
-	   },
-	   ontimes:new Array()
-	};
-	CLS.Marquee = CLS.create();
-	CLS.Marquee.prototype = {
-	   init:function (button,box,speed){
-	      this.box = $(box);
-		  this.tit = $(button)
-		  this.kong = $("kong");
-		  this.onOpen = true;
-		  this.show = false;
-		  this.time = 0;
-		  this.speed = speed;
-		  this.kong.style.height = this.box.offsetHeight +"px";
-		  this.Maxw = this.box.offsetWidth-this.tit.offsetWidth;
-		  this.box.style.right = -this.box.offsetWidth + "px";
-		  this.boxTop = this.kong.offsetTop;
-		  var _t = this;
-		  this.tit.onclick = function (){
-		    this.show = true;
-		    if(_t.onOpen){
-			  _t.onEnterFrame = _t.close;
-			  _t.onOpen = false;
-			}else{
-			  _t.onEnterFrame = _t.open;
-			  _t.onOpen = true;
-			}
-			_t.$PLAY();
-		  };
-		  this.$ADD(CLS.enterFrame);
-		  this.onEnterFrame = this.open;
-		  this.$PLAY();
-	   },
-	   open:function(){
-	      this.tit.innerHTML = "-";
-	      var _r = parseInt(this.box.style.right);
-		  var _b = (0 - _r)/30;
-		  this.box.style.right = (_r + _b) +"px";
-		  this.kong.style.top = (document.documentElement.scrollTop + this.boxTop) +"px";
-		  if(_b==0 && !this.show){
-		   this.time +=10;
-		   if(this.time>=this.speed*1000){
-		     this.show = true;
-			 this.onOpen = false;
-			 this.$STOP();
-		     this.onEnterFrame = this.close;
-			 this.$PLAY(); 
-		   }
-		  }	  
-	   },
-	   close:function (){
-	      this.tit.innerHTML = "+";
-	      var _r = parseInt(this.box.style.right);
-		  var _b = (-this.Maxw - _r)/5;
-		  this.box.style.right = Math.round(_r + _b) +"px";
-		  this.kong.style.top = (document.documentElement.scrollTop + this.boxTop) +"px";
-	   }
-	};
-	window.onload = function (){
-	  setTimeout(function(){new CLS.Marquee("tit","out",10)},0);//tit是点击按钮的Id ，abc是浮动块的ID,10是显示时长
-	};
+		}
+	}
 </script>
 </html>
