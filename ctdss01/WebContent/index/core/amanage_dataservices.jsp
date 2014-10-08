@@ -21,7 +21,7 @@
 	#pipepreview h2 { border-top:2px solid #e4e4e4; }
 	</style>
 	<![endif]-->
-<title>Create Mashup Traditional</title>
+<title>城市交通数据服务空间</title>
 <STYLE type=text/css>
 BODY {
 	PADDING-RIGHT: 0px;

@@ -17,7 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	#pipepreview h2 { border-top:2px solid #e4e4e4; }
 	</style>
 	<![endif]-->
-    <title>Create Data Service Clipper</title>
+    <title>城市交通数据服务空间</title>
 <body>    
 	<div class="forshowfooter1">
 	<div id="main" class="header">

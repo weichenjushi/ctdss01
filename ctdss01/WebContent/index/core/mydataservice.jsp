@@ -12,7 +12,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link rel="stylesheet" type="text/css" href="index/css/core_css/index.css">   
 	<link rel="stylesheet" type="text/css" href="index/css/core_css/dataservice.css">
 	<link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
-    <title>My Data Service</title>
+    <title>城市交通数据服务空间</title>
 </head>
 <body onload="initMyDataServices();initTService();">    
 	<div id="main" class="header">

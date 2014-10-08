@@ -17,7 +17,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	#pipepreview h2 { border-top:2px solid #e4e4e4; }
 	</style>
 	<![endif]-->
-    <title>Create Mashup Map</title>
+    <title>城市交通数据服务空间</title>
 <body>    
 	<div id="main">
 	<div class="header">

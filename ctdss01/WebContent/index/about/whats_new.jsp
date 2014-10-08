@@ -8,7 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <head>
     <base href="<%=basePath%>">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>What's_new</title>
+<title>城市交通数据服务空间</title>
 <link rel="stylesheet" href="index/css/about.css">
 
 </head>
