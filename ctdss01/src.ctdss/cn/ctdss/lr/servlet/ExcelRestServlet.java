@@ -125,7 +125,7 @@ public class ExcelRestServlet extends HttpServlet {
 							}
 							if ("xml".equals(dtype))// 返回数据为xml格式
 							{
-								String path = "http://localhost:8080/ctdss01/xml/" + TableId + ".xml";
+								String path = "http://113.11.194.86:8088/ctdss01/xml/" + TableId + ".xml";
 
 								// request.getRequestDispatcher(path).forward(request, response);
 								response.sendRedirect(path);
