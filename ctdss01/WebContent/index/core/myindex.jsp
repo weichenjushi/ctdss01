@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
 	<link rel="stylesheet" type="text/css" href="test/docsnew.css">
 	<link rel="stylesheet" type="text/css" href="test/news_content.css">
+	<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
 	
 <!--[if IE]><style>.subactions { padding-right:8px;} 
 	.subactions.active padding-right:10px;} 

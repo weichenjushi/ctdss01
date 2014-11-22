@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="test/default.css">
 <link rel="stylesheet" type="text/css" href="test/docsapi.css">
 <link rel="stylesheet" type="text/css" href="test/rateit.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
 <title>城市交通数据服务空间</title>
 <script type="text/javascript" src="index/js/jquery.min.js"></script>
 <script type="text/javascript" src="index/js/tab.js"></script>

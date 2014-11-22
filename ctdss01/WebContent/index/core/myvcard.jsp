@@ -15,6 +15,7 @@
 <link rel="stylesheet" type="text/css" href="index/css/core_css/index.css">
 <link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
 <link rel="stylesheet" type="text/css" href="test/ucenter.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
 
 <script type="text/javascript" src="test/htmlformat.js"></script>
 <script type="text/javascript" src="test/jquery.min.js"></script>

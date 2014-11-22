@@ -19,6 +19,7 @@
 <link rel="stylesheet" type="text/css" href="test/ucenter.css">
 <link rel="stylesheet" type="text/css" href="test/default.min.css">
 <link rel="stylesheet" type="text/css" href="test/box.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
 
 
 <script type="text/javascript" src="test/htmlformat.js"></script>

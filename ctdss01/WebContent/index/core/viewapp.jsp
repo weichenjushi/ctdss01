@@ -13,6 +13,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <link rel="stylesheet" type="text/css" href="index/css/core_css/layout">
     <link rel="stylesheet" type="text/css" href="index/css/core_css/index.css">
     <link rel="stylesheet" type="text/css" href="index/css/core_css/head_menu.css">  
+    <link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
     <!--[if IE]><style>.subactions { padding-right:8px;} 
 	.subactions.active padding-right:10px;} 
 	.subactions img { vertical-align:middle;  } 

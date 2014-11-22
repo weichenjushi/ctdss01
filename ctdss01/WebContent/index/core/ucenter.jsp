@@ -15,6 +15,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
 	<link rel="stylesheet" type="text/css" href="test/docsnew.css">
 	<link rel="stylesheet" type="text/css" href="test/ucenter.css">
+	<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
     <title>城市交通数据服务空间</title>
 </head>
 <body onload="initDataServices();initTService();"> 

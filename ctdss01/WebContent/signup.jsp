@@ -9,6 +9,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Sign Up</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
     <link rel="stylesheet" href="index/css/log_sign.css">
     <link rel="stylesheet" type="text/css" href="index/css/core_css/index.css">  
 	<link rel="stylesheet" type="text/css" href="index/css/core_css/uhead_menu.css">
