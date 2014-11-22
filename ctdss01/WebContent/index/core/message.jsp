@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8"%>   
 <%@ page import="java.util.*"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -55,8 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<%} %>
 		</ul>
 		<div class="forshowfooter2">
-		<center><p style="margin-top:5%;font-size: 20;color: #007def;">${message}</p></center>
-		
+		<center><p style="margin-top:5%;font-size: 20;color: #007def;">${message}<c:out value="${message1}" default="expression" escapeXml="true"></c:out></p></center>
 		</div>
 		
         <div id="ft">Copyright © 2014 | <a href="index/about/about_us.jsp">关于我们</a> |<a href="index/about/feedback.jsp"> 反馈</a></div><!--/#ft --> 
