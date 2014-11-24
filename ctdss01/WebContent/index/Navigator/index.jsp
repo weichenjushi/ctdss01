@@ -58,9 +58,9 @@
 				<table class="table">
 					<tr>
 						<td width="42%"><img src="index/images/icons/pin-icon.png" width="110" height="110" alt="trafficFlow"><a href="trafficFlowServlet"
-							class="linkword">车流量数据服务</a></td>
-							<td width=42%><a href="trafficFlowServlet/xml">xml</a></td>
-							<td width=42%><a href="trafficFlowServlet/json">json</a></td>
+							class="linkword" target="blank">车流量数据服务</a></td>
+							<td width=42%><a href="trafficFlowServlet/xml" target="blank">xml</a></td>
+							<td width=42%><a href="trafficFlowServlet/json" target="blank">json</a></td>
 					</tr>
 					<!-- <tr>
 					<td width=42%>

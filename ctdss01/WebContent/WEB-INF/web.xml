@@ -18,7 +18,7 @@
     <url-pattern>/index/core/acreate_data_service_wrapper.jsp</url-pattern>
     <url-pattern>/index/core/amanage_users.jsp</url-pattern>
     <url-pattern>/index/core/amanage_dataservices.jsp</url-pattern>
-    <url-pattern>/index/Navigator/*</url-pattern>
+    <url-pattern>/index/Navigator/about/*</url-pattern>
   </filter-mapping>
   <filter>
     <filter-name>EncodingFileter</filter-name>
