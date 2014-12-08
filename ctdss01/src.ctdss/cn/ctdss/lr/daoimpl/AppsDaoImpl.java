@@ -378,7 +378,7 @@ public class AppsDaoImpl {
 	}
 
 	public Map<String, String> getparmsByDtname(String dtname) {
-		sql = "select column_name,data_type from information_schema.columns where table_name=?";
+		sql = "select DISTINCT column_name,data_type from information_schema.columns where table_name=?";
 		Map<String, String> maplist = new HashMap<String,String>();
 		try {
 			conn = JdbcUtil.getMysqlConnection();

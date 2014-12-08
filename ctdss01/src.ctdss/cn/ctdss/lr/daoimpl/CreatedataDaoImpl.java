@@ -14,6 +14,9 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
+import org.junit.Test;
+
+import com.test.test4xml;
 
 import cn.ctdss.lr.utils.DBUtils;
 import cn.ctdss.lr.utils.JdbcUtil;
@@ -124,6 +127,7 @@ public class CreatedataDaoImpl {
 						Element ele = element1.addElement(rsmd.getColumnName(i)).addText(rs.getString(i));
 					}
 				}
+				System.out.println(doc.asXML());
 				writeXML(doc, filePath); // ���ô���XML�ĵ��ķ���
 				flag=true;
 			}
@@ -139,7 +143,26 @@ public class CreatedataDaoImpl {
 	public String createJson(String dtname) throws SQLException {
 		return createJsonFile("select * from "+dtname);
 	}
-	
+	@Test
+	public void testjson() throws Exception {
+		createRetJsonData();
+		//createRetXmlData();
+	}
+	public void createRetJsonData(){
+		StringBuilder sb=new StringBuilder();
+		try {
+			updateretxml("t_subway","D:\\1.xml");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(sb);
+	}
+	public void createRetXmlData(){
+		StringBuilder sb=new StringBuilder();
+		sb.append(createJsonFile("select * from t_subway where id=1")) ;
+		System.out.println(sb);
+	}
 	private String createJsonFile(String sql){
 		try {
 			StringBuilder sb = new StringBuilder();
@@ -158,6 +181,8 @@ public class CreatedataDaoImpl {
 						// ����Ԫ�������Ԫ��(����)��Ԫ�ص��ı�(��ֵ) ������Ϊ��Ԫ�����Ԫ��
 						sb.append("\"").append("" + rsmd.getColumnName(i) + "").append("\"").append(":\"").append("" + rs.getString(i) + "").append("\"").append(",\n");
 					}
+					//将最后的“，”去掉
+					sb.deleteCharAt(sb.lastIndexOf(","));
 					sb.append("}\n");
 				}
 				sb.append("]\n}");
