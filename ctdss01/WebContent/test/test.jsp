@@ -27,15 +27,13 @@
 	});
 </script>
 <script type="text/javascript">
-function test(id){
-	alert(id);
-	var username=document.getElementById("username").value;
-	var test1;
-	//alert(test1);
-	if(test1==undefined){
-		alert("用户名不能为空");
+function test(){
+	var point="fsd";
+	for(var i=0;i<10;i++){
+		alert(point+i);
 	}
 }
+
 </script>
 </head>
 <body>
@@ -54,7 +52,7 @@ function test(id){
 	<input type="radio" value="radio1" /> radio1
 	<input type="radio" value="radio2" /> radio2
 	<input type="text" id="txt">
-	<button type="button">Click me</button>
+	<button type="button" onclick="test()">Click me</button>
 	<a id="next">下一页</a>
 	<form action="">
 	<table><tr><td>用户名</td><td><input type="text" id="username"></td></tr></table>
