@@ -54,7 +54,7 @@ body,html {
 <body>
 	<%
 // 		String urlAll = "http://10.5.80.2:8080/Rest/TrafficFlow/xml";
-	String urlAll = "http://10.5.83.166:8080/ctdss01/trafficFlowServlet/xml";
+	    String urlAll = "http://10.5.83.166:8080/ctdss01/trafficFlowServlet/xml";
 		String charset = "UTF-8";
 		
 		BufferedReader reader = null;

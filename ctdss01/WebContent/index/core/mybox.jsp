@@ -85,7 +85,7 @@
 							</select> --%>
 						</div>
 						<div class="data-request-type">
-							请求方式：<input type="radio" name="type" value="get" checked="checked"><span class="cutime">GET</span>&nbsp;
+							请求方式：<input type="radio" name="type" value="get" checked="checked"><span class="cutime">POST</span>&nbsp;
 						</div>
 						<div class="data-request-dtype">
 							返回格式：<input type="radio" name="dtype" value="json" ><span class="cutime">JSON</span>&nbsp;<input type="radio" name="dtype" value="xml" checked="checked"><span

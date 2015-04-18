@@ -18,12 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="test/docsnew.css">
 	<link rel="stylesheet" type="text/css" href="test/news_content.css">
 	<link rel="shortcut icon" type="image/x-icon" href="http://decloud.ncut.edu.cn/favicon.ico" />
-<!--[if IE]><style>.subactions { padding-right:8px;} 
-	.subactions.active padding-right:10px;} 
-	.subactions img { vertical-align:middle;  } 
-	#pipepreview h2 { border-top:2px solid #e4e4e4; }
-	</style>
-	<![endif]-->
+
 <title>城市交通数据服务空间</title>
 
 </head>

@@ -90,7 +90,7 @@
 							</select> --%>
 						</div>
 						<div class="data-request-type">
-							请求方式：<input type="radio" name="type" value="get" checked="checked"><span class="cutime">GET</span>&nbsp;
+							请求方式：<input type="radio" name="type" value="get" checked="checked"><span class="cutime">POST</span>&nbsp;
 							<!-- <input type="radio" name="type" value="post"><span class="cutime">POST</span> -->
 						</div>
 						<div class="data-request-dtype">
